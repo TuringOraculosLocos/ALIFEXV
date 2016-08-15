@@ -188,7 +188,7 @@ E = 0.123 # E is the social Energy of each node  inicial .123
 
 S = 1.00      # S is the strength of social Synergy   original 1.00
 
-p = 1.00  # p is the probability that an edge will be rewired
+P = 1.00  # p is the probability that an edge will be rewired
 
 
 
@@ -770,7 +770,7 @@ def rewire():
 
     for i, j in network.edges():               # for each edge...
 
-        if RD.random()<p:                      # ...with probability p...
+        if RD.random()<P:                      # ...with probability p...
 
             network.remove_edge(i,j)           # ...remove it...
 
